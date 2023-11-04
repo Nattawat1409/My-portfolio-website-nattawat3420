@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.photo img{
+    text-align: center;
+}
+
+body{
+    background-color: rgba(175, 235, 247, 0.985)
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+
+nav{
+    background-color: #39d2fc;
+}
+/* CSS */
+.content1 {
+    display: inline-block; /* ทำให้เนื้อหาภายใน .content เลื่อนขึ้นมาอยู่บรรทัดเดียวกับรูป */
+  }
+  
+.explain img{
+    vertical-align: top; /* จัดให้รูปและเนื้อหาภายใน .explain อยู่บรรทัดเดียวกันและชิดด้านบนของกล่อง */
+  }
+  
+  
+
+.nav-con{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 60px;
+}
+.menu{
+     display: flex;
+}
+.menu li{
+    list-style:none;
+    margin-left:1.5rem;
+}
+.menu a:hover{
+    color:rgb(255, 211, 211);
+}
+a{
+    color:#fff; 
+    text-decoration:none;
+}
+.logo a{
+    font-size:2rem;
+}
+.menu li:hover{
+    background-color:#1e52cd46;
+    transition:0.5s;
+}
+.logo a{
+    color:rgb(226, 232, 238);
+}
+.logo h6{
+    color:white;
+}
+.me b{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: rgb(225, 248, 255);
+}
+
+.me div {
+    text-indent: 20px; /* กำหนดการเยกข้อความ 20px ทางซ้าย */
+    margin-top: 10px; /* กำหนด margin ด้านบนของข้อความ 10px */
+    margin-bottom: 10px; /* กำหนด margin ด้านล่างของข้อความ 10px */
+  }
+
+
+
+@media screen and (max-width:360px) {
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .nav-con{
+        padding: 3rem 0;
+        flex-direction:column;
+        height:auto;
+    }
+    .menu{
+        width:100%;
+        text-align: center;
+        flex-direction:column;
+    }
+
+    .menu li{
+        padding: 1rem 0;
+        margin-left:0;                   /* 1 is distance between top and button from this element in menu, 
+                           0 is distance between L side and R of the all menu bars and how is far from padding*/
+    }
+    .menu li:hover{
+        background-color:rgba(43, 84, 180, 0.106);
+        transition:0.5s;
+    }
+    
+}
+
+body {
+    background-color: rgba(239, 236, 236, 0.976)
+  }
+  ._portfolio {
+  text-decoration: none; /* ยกเลิกเส้น underline ของลิงก์ */
+  }
+   ._portfolio:hover {
+      text-decoration: none; /* ยกเลิกเส้น underline เมื่อ hover กับลิงก์ */
+   }
+  nav {
+      transition: all 0.3s;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100; /* ให้ nav อยู่ด้านบนสุดของหน้าเว็บ */
+  }
+  nav.scrolled {
+      border: 2px solid rgb(0, 0, 0);
+      background-color: #333;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .photo {
+width: 200px; /* กำหนดความกว้างของ container */
+height: 200px; /* กำหนดความสูงของ container */
+display: inline-block; /* เพื่อให้ container มีขนาดเท่ากับขนาดของภาพ */
+overflow: hidden; /* ซ่อนส่วนที่เกินขอบ container */
+padding: 10px;
+}
+
+.photo img {
+width: 100%; /* ขยายภาพให้เต็ม container */
+height: 100%; /* ขยายภาพให้เต็ม container */
+object-fit: cover; /* ปรับขนาดภาพและรักษาสัดส่วนเพื่อครอบคลุม container */
+border-radius: 50%; /* ทำให้ภาพเป็นรูปวงกลม */
+box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 1);
+}

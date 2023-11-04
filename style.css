@@ -66,12 +66,11 @@ a{
     color:white;
 }
 .me b{
-    border: 1px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
-    background-color: rgb(225, 248, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .me div {
